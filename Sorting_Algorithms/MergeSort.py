@@ -1,4 +1,9 @@
 # TIME COMPLEXITY = O(nlogn)
+#    dividing the array into n havles - logn time 
+#    merging them back traversing will take O(n) time '
+
+# SPACE COMPLEXITY = O(n)
+# we used extra array for temp storing elements
 
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
