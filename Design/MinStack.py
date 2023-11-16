@@ -1,0 +1,39 @@
+#https://leetcode.com/problems/min-stack/description/
+#we can't use variable to maintain and update it, because what wioll happen is when we pop 
+# then the min value wil be overwritten and we dont know what the last min was . 
+# hence, the idea to maintain two stacks. 
+
+class MinStack:
+
+    def __init__(self):
+        self.stack =[]
+        self.minStack =[]
+        
+
+    def push(self, val: int) -> None:
+        self.stack.append(val)
+      #comparing to find the new min 
+        if self.minStack:
+            val = min(val, self.minStack[-1])
+        else:
+            val = min(val,val)
+
+        self.minStack.append(val)
+    def pop(self) -> None:
+        self.stack.pop()
+        self.minStack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1]
+
+    def getMin(self) -> int:
+        return self.minStack[-1]
+        
+
+
+# Your MinStack object will be instantiated and called as such:
+# obj = MinStack()
+# obj.push(val)
+# obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.getMin()
