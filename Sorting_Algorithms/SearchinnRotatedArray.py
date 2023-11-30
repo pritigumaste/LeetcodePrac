@@ -1,3 +1,5 @@
+#BINARY SEARCH
+
 #https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/
 
 #time complexity : o(logn ) 
