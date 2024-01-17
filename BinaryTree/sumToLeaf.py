@@ -1,5 +1,5 @@
 #https://leetcode.com/problems/sum-root-to-leaf-numbers/
-#iterative preorder traversal
+#iterative INORDER traversal
 #time: O(n)
 #space: O(h)
 
