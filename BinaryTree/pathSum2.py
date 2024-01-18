@@ -1,6 +1,6 @@
 #Time: O(n^2) as we creating copies of the list at every step
 #space: O(h) 
-
+#h is height of the tree and n is the number of times we will create a new list  
 #https://leetcode.com/problems/path-sum-ii/
 
 
