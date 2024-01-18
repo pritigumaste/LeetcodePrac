@@ -24,7 +24,9 @@ class Solution:
         currSum += root.val
         path =[]
         #WOW 
-        #so we crated new list and kept on updating it 
+        #so we crated new list and kept on updating it
+#we are creating a diff list at every level that way we are not having issue with respect to pointing to 
+        #the same list
         path.extend(currList)
         path.append(root.val)
         #print("currList", currList)
