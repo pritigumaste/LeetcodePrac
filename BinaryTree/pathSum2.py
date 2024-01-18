@@ -1,4 +1,4 @@
-#Time: O(n)
+#Time: O(n^2) as we creating copies of the list at every step
 #space: O(h) 
 
 #https://leetcode.com/problems/path-sum-ii/
