@@ -10,6 +10,7 @@
 #         self.left = left
 #         self.right = right
 
+#DFS
 
 #go on exploring left and right nodes
 class Solution:
