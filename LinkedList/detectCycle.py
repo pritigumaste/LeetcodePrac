@@ -17,6 +17,10 @@ class Solution:
         slow = head
         fast = head
 
+          #to detect if there is a cycle
+        #we dont know if the len is even or odd 
+        # hence we do next and check fro fast as well 
+        #as we are increasing fast by 2 might not work in cases when its odd length
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
