@@ -1,6 +1,8 @@
 #https://leetcode.com/problems/linked-list-cycle-ii/editorial/
 #LINKEDLIST CYCLE 2 
 
+#time: O(n) 
+#space O(1) 
 
 # Definition for singly-linked list.
 # class ListNode:
