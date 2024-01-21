@@ -1,5 +1,8 @@
 
-
+#RECURSIOn with memoization
+# we do memoziation to save values to not calculate them
+#if they have already been 
+#reduces space and time as well 
 
 class Solution:
 
