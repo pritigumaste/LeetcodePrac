@@ -9,7 +9,7 @@ class Solution:
         #a visited set to mark all the nodes as visited
 
         #using SET because if we use LIST then we are saving every possibility that we might be trying to override 
-# will take a lot of space
+# will take a lot of space gives TLE
         visited =set()
         countIslands =0
         def bfs(r,c):
