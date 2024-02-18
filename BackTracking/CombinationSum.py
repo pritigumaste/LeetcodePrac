@@ -3,6 +3,7 @@
 #Space: O^n2 (for every element we generate new copy of path)
 #https://leetcode.com/problems/combination-sum/
 
+
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         
@@ -27,13 +28,20 @@ class Solution:
             # we can also change the order of the calls, if we choose before, we will also 
             #have to remove the elements from the path, hence use path.pop()
 
+
+            # we can create new copy pf path and add new elements here if we dont want to do backtracking
+            temp=path.copy()
+            temp.append(candidates[i])
+            helper(candidates, val - candidates[i], i , temp)
             helper(candidates, val, i+1, path.copy()) 
             #if we choose 
-            path.append(candidates[i])
-            helper(candidates, val - candidates[i], i , path.copy())
+            # path.append(candidates[i])
+            # helper(candidates, val - candidates[i], i , path.copy())
             #path.pop()
 
-            
+            #removing the element is basically backtracking in this case
+
+
         
         result= []
         if len(candidates) == 0:
