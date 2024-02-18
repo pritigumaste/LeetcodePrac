@@ -1,5 +1,6 @@
 #https://leetcode.com/problems/permutations-ii/
-
+#time: N. N!
+#space: O(n)
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         
