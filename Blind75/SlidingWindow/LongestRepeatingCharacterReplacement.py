@@ -15,7 +15,7 @@ class Solution:
 
             #window(that we are considering now) - max repeated char > k 
             while(right-left+1) - max(hashMap.values()) >k:
-                #reducing the char that is to be replaced by 1
+                #as we are moving thew window. we don;t need the frequency of left char
                 hashMap[s[left]] -=1
                 #incrementing the window 
                 left +=1
