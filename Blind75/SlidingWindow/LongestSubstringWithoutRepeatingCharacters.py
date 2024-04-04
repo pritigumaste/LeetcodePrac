@@ -2,6 +2,7 @@
 #space: O(min(m,n)) m is the number of chars/ n is the size of string
 #depending on what we store in hashMap
 
+# can be done using SET as well - as set stores element only once
 #https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
 class Solution:
