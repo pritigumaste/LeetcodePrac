@@ -28,7 +28,7 @@ class Solution:
 #time: O(n)
 #space: O(h)
 
-#RECURSIVE DFS
+#RECURSION
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
